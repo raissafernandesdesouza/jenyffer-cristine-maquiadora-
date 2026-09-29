@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f4f5">
+  <meta name="description" content="Jenyffer Cristine, maquiadora em Lavras, MG. Maquiagem para momentos especiais, com atendimento atencioso e produtos de qualidade.">
+  <title>Jenyffer Cristine | Maquiadora em Lavras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #33282f;
+      --muted: #766970;
+      --paper: #f8f4f5;
+      --rose: #d9a7b5;
+      --plum: #704d62;
+      --lilac: #e9dfea;
+      --line: #e7dfe3;
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); }
+    a { color: inherit; }
+    .topline { min-height: 34px; display: flex; align-items: center; justify-content: center; padding: 7px 18px; background: var(--plum); color: #fff9fb; font-size: 11px; letter-spacing: 1.2px; text-align: center; }
+    .site-header { height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 0 7.2%; background: var(--paper); }
+    .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-mark { width: 38px; height: 38px; display: grid; place-items: center; border: 1px solid var(--rose); border-radius: 50%; color: var(--plum); font-family: var(--serif); font-size: 19px; }
+    .brand-name { display: block; font-family: var(--serif); font-size: 18px; line-height: 1.15; }
+    .brand-sub { display: block; margin-top: 3px; color: var(--muted); font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; }
+    .nav { display: flex; align-items: center; gap: 32px; }
+    .nav a { text-decoration: none; font-size: 12px; }
+    .nav a:hover { color: var(--plum); }
+    .nav .nav-cta { padding: 12px 19px; border: 1px solid var(--plum); color: var(--plum); transition: background .2s ease, color .2s ease; }
+    .nav .nav-cta:hover { background: var(--plum); color: white; }
+
+    .hero { position: relative; min-height: 460px; height: calc(100svh - 190px); max-height: 740px; overflow: hidden; display: flex; align-items: center; background: #59434f; color: #fffafc; }
+    .hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 38%; }
+    .hero::after { position: absolute; inset: 0; content: ""; background: rgba(42, 28, 38, .53); }
+    .hero-content { position: relative; z-index: 1; width: min(680px, 80%); margin-left: 12%; padding: 45px 0 58px; }
+    .eyebrow { margin: 0 0 21px; font-size: 11px; letter-spacing: 2.3px; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 650px; margin-bottom: 17px; font-family: var(--serif); font-size: 76px; font-weight: 400; line-height: 1.04; }
+    .hero-copy { max-width: 430px; margin-bottom: 27px; color: #f5eaf0; font-size: 16px; line-height: 1.7; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+    .button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; padding: 0 20px; text-decoration: none; font-size: 12px; font-weight: 600; transition: background .2s ease, color .2s ease, border-color .2s ease; }
+    .button-primary { background: #efd5df; color: #3c2c36; }
+    .button-primary:hover { background: white; }
+    .button-quiet { border: 1px solid rgba(255,255,255,.7); color: white; }
+    .button-quiet:hover { background: rgba(255,255,255,.13); }
+    .hero-rating { display: flex; align-items: center; gap: 10px; margin-top: 33px; font-size: 12px; }
+    .stars { color: #f4d68a; letter-spacing: 2px; }
+    .hero-rating strong { font-size: 13px; }
+    .hero-rating span:last-child { color: #f5eaf0; }
+    .hero-caption { position: absolute; z-index: 1; right: 5%; bottom: 30px; color: rgba(255,255,255,.8); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; writing-mode: vertical-rl; }
+
+    .intro { padding: 78px 10% 86px; text-align: center; }
+    .section-label { margin-bottom: 15px; color: var(--plum); font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+    h2 { margin-bottom: 20px; font-family: var(--serif); font-size: 42px; font-weight: 400; line-height: 1.2; }
+    .intro-copy { max-width: 570px; margin: 0 auto; color: var(--muted); font-size: 14px; line-height: 1.9; }
+    .service-band { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .service { min-height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 28px; text-align: center; }
+    .service + .service { border-left: 1px solid var(--line); }
+    .service-number { margin-bottom: 14px; color: #ae8193; font-family: var(--serif); font-size: 15px; }
+    .service h3 { margin-bottom: 9px; font-family: var(--serif); font-size: 21px; font-weight: 400; }
+    .service p { max-width: 240px; margin-bottom: 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+
+    .review-section { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 8%; padding: 90px 12%; background: var(--lilac); }
+    .review-score { padding-right: 12%; border-right: 1px solid #d3c4d5; text-align: center; }
+    .review-score strong { display: block; font-family: var(--serif); font-size: 82px; font-weight: 400; line-height: 1; }
+    .review-score .stars { display: block; margin: 13px 0 8px; }
+    .review-score p { margin: 0; color: var(--muted); font-size: 12px; }
+    .review-quote { margin: 0 0 16px; font-family: var(--serif); font-size: 27px; line-height: 1.5; }
+    .review-note { margin: 0; color: var(--muted); font-size: 11px; letter-spacing: .6px; }
+
+    .contact { display: grid; grid-template-columns: 1.1fr .9fr; gap: 10%; padding: 88px 12%; }
+    .contact h2 { max-width: 440px; }
+    .contact-copy { max-width: 430px; margin-bottom: 25px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+    .contact-details { display: flex; flex-direction: column; justify-content: center; gap: 22px; padding-left: 12%; border-left: 1px solid var(--line); }
+    .detail-label { display: block; margin-bottom: 6px; color: var(--plum); font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+    .detail-value { font-size: 13px; line-height: 1.6; }
+    .detail-value a { text-decoration-color: #c5aab7; text-underline-offset: 4px; }
+    .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px 7.2%; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; }
+    .footer-brand { color: var(--ink); font-family: var(--serif); font-size: 16px; }
+    .site-footer a { text-decoration: none; }
+    .fade-in { animation: rise-in .8s both; }
+    @keyframes rise-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 720px) {
+      .topline { min-height: 32px; font-size: 9px; letter-spacing: .8px; }
+      .site-header { height: 66px; padding: 0 20px; }
+      .brand-mark { width: 34px; height: 34px; }
+      .brand-name { font-size: 16px; }
+      .nav { gap: 12px; }
+      .nav a:not(.nav-cta) { display: none; }
+      .nav .nav-cta { padding: 10px 12px; font-size: 11px; }
+      .hero { min-height: 430px; height: calc(100svh - 176px); max-height: 680px; }
+      .hero-photo { object-position: 54% center; }
+      .hero::after { background: rgba(42, 28, 38, .57); }
+      .hero-content { width: auto; margin: 0 24px; padding: 38px 0 52px; }
+      .eyebrow { margin-bottom: 17px; font-size: 9px; letter-spacing: 1.5px; }
+      h1 { max-width: 400px; font-size: 54px; }
+      .hero-copy { max-width: 340px; font-size: 14px; }
+      .hero-rating { flex-wrap: wrap; gap: 7px; margin-top: 25px; }
+      .hero-caption { right: 14px; bottom: 18px; font-size: 8px; }
+      .intro { padding: 62px 25px 66px; }
+      h2 { font-size: 34px; }
+      .intro-copy { font-size: 13px; }
+      .service-band { grid-template-columns: 1fr; }
+      .service { min-height: 145px; padding: 22px; }
+      .service + .service { border-top: 1px solid var(--line); border-left: 0; }
+      .review-section { grid-template-columns: 1fr; gap: 36px; padding: 62px 28px; }
+      .review-score { padding: 0 0 28px; border-right: 0; border-bottom: 1px solid #d3c4d5; }
+      .review-score strong { font-size: 68px; }
+      .review-quote { font-size: 22px; text-align: center; }
+      .review-note { text-align: center; }
+      .contact { grid-template-columns: 1fr; gap: 40px; padding: 64px 26px; }
+      .contact-details { gap: 18px; padding: 24px 0 0; border-top: 1px solid var(--line); border-left: 0; }
+      .site-footer { align-items: flex-start; padding: 22px 20px; }
+      .site-footer span:last-child { max-width: 150px; text-align: right; line-height: 1.6; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topline">ATENDIMENTO EM LAVRAS, MG <span aria-hidden="true">&nbsp; · &nbsp;</span> AGENDE SEU HORÁRIO PELO WHATSAPP</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Jenyffer Cristine, início">
+      <span class="brand-mark" aria-hidden="true">JC</span>
+      <span><span class="brand-name">Jenyffer Cristine</span><span class="brand-sub">Maquiadora</span></span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre">O estúdio</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a class="nav-cta" href="https://wa.me/5535999566850?text=Ol%C3%A1%2C%20Jenyffer!%20Gostaria%20de%20consultar%20um%20hor%C3%A1rio%20para%20maquiagem.">Fale pelo WhatsApp</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <img class="hero-photo" src="https://lh3.googleusercontent.com/grass-cs/ACvplmMryYYqu0swfgfAh9Tw4cFwAd4lbdXDY7CIKFLG3_1rrKcswJqVAfaIWeeFuIMPk7iGdgcFRwHV7GJrf8ort-zE4F6ZZhiOjfn8eD624XRhisJTgSD9NcdPgTWryqVlsIQQ3Nn4X0dhL2k=w1200-h1800-k-no" alt="Foto publicada no perfil do estúdio Jenyffer Cristine no Google Maps" fetchpriority="high">
+      <div class="hero-content fade-in">
+        <p class="eyebrow">Estúdio de maquiagem <span aria-hidden="true">·</span> Lavras, MG</p>
+        <h1 id="hero-title">Jenyffer<br>Cristine</h1>
+        <p class="hero-copy">Uma maquiagem feita com cuidado para você se sentir ainda mais você em cada ocasião especial.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://wa.me/5535999566850?text=Ol%C3%A1%2C%20Jenyffer!%20Gostaria%20de%20consultar%20um%20hor%C3%A1rio%20para%20maquiagem.">Agendar pelo WhatsApp</a>
+          <a class="button button-quiet" href="https://www.google.com/maps/search/?api=1&amp;query=Jenyffer+cristine+maquiadora+lavras">Como chegar</a>
+        </div>
+        <div class="hero-rating" aria-label="Nota 5 de 5 com 71 avaliações no Google">
+          <strong>5,0</strong><span class="stars" aria-hidden="true">★★★★★</span><span>71 avaliações no Google</span>
+        </div>
+      </div>
+      <span class="hero-caption">Beleza que acompanha você</span>
+    </section>
+
+    <section class="intro" id="sobre">
+      <p class="section-label">Um momento só seu</p>
+      <h2>Beleza com presença.<br>Leveza em cada detalhe.</h2>
+      <p class="intro-copy">Atendimento atencioso, produtos de qualidade e uma maquiagem pensada para a sua ocasião. No estúdio da Jenyffer, cada produção começa com uma conversa sobre o que faz você se sentir bem.</p>
+    </section>
+
+    <section class="service-band" aria-label="Ocasiões para sua maquiagem">
+      <article class="service">
+        <span class="service-number">01</span>
+        <h3>Maquiagem social</h3>
+        <p>Uma produção especial para celebrar do seu jeito.</p>
+      </article>
+      <article class="service">
+        <span class="service-number">02</span>
+        <h3>Casamentos</h3>
+        <p>Para noivas, convidadas e dias que ficam na memória.</p>
+      </article>
+      <article class="service">
+        <span class="service-number">03</span>
+        <h3>Eventos especiais</h3>
+        <p>Beleza pensada para acompanhar você até o último momento.</p>
+      </article>
+    </section>
+
+    <section class="review-section" id="avaliacoes">
+      <div class="review-score">
+        <strong>5,0</strong>
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p>71 avaliações no Google</p>
+      </div>
+      <div>
+        <p class="review-quote">“Maquiagem linda demais, amei cada detalhe, durou a noite inteira!”</p>
+        <p class="review-note">Uma avaliação de cliente no Google</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div>
+        <p class="section-label">Vamos conversar?</p>
+        <h2>Seu próximo momento especial começa aqui.</h2>
+        <p class="contact-copy">Consulte horários e conte um pouco sobre a ocasião. A Jenyffer atende em Lavras, com agendamento pelo WhatsApp.</p>
+        <a class="button button-primary" href="https://wa.me/5535999566850?text=Ol%C3%A1%2C%20Jenyffer!%20Gostaria%20de%20consultar%20um%20hor%C3%A1rio%20para%20maquiagem.">Conversar com a Jenyffer</a>
+      </div>
+      <div class="contact-details">
+        <div><span class="detail-label">Endereço</span><span class="detail-value"><a href="https://www.google.com/maps/search/?api=1&amp;query=R.+Saturnino+de+P%C3%A1dua%2C+508%2C+Lavras+-+MG">R. Saturnino de Pádua, 508<br>Dos Ipês, Lavras - MG</a></span></div>
+        <div><span class="detail-label">Telefone e WhatsApp</span><span class="detail-value"><a href="tel:+5535999566850">(35) 99956-6850</a></span></div>
+        <div><span class="detail-label">Atendimento</span><span class="detail-value">Consulte disponibilidade pelo WhatsApp</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-brand">Jenyffer Cristine</span>
+    <span>Maquiadora em Lavras, Minas Gerais</span>
+  </footer>
+</body>
+</html>
